@@ -14,3 +14,5 @@
  *
  * @package wp-block-migrator
  */
+
+namespace Alley\WP\WP_Block_Migrator;

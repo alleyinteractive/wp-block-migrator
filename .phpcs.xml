@@ -37,6 +37,7 @@
     <properties>
       <property name="prefixes" type="array">
         <element value="wp_block_migrator" />
+        <element value="Alley\WP\WP_Block_Migrator" />
       </property>
     </properties>
   </rule>

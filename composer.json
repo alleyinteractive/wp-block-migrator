@@ -19,10 +19,22 @@
             "alleyinteractive/composer-wordpress-autoloader": true
         }
     },
+    "extra": {
+        "wordpress-autoloader": {
+            "autoload": {
+                "Alley\\WP\\WP_Block_Migrator\\": "src"
+            },
+            "autoload-dev": {
+                "Alley\\WP\\WP_Block_Migrator\\Tests\\": "tests"
+            }
+        }
+    },
     "scripts": {
         "phpcs": "phpcs .",
+        "phpunit": "phpunit .",
         "test": [
-            "@phpcs"
+            "@phpcs",
+            "@phpunit"
         ]
     }
 }
