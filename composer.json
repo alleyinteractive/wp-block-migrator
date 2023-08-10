@@ -2,12 +2,25 @@
     "name": "alleyinteractive/wp-block-migrator",
     "description": "Utilities for assisting with Gutenberg migrations.",
     "type": "wordpress-plugin",
-    "license": "GPLv2",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Alley",
             "email": "info@alley.com"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "alleyinteractive/alley-coding-standards": "^1.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "phpcs": "phpcs .",
+        "test": [
+            "@phpcs"
+        ]
+    }
 }
